@@ -1,0 +1,56 @@
+.header {
+  height: 655px;
+  background-image: url('../images/Rectangle\ 8.svg');
+  background-size: cover;
+  padding: 24px 0 0 130px;
+  position: relative;
+  margin-bottom: 16px;
+
+  &__text {
+    color: #fff;
+
+    &--logo {
+      font-size: 40px;
+      line-height: 49px;
+      margin-bottom: 48px;
+    }
+
+    &--head {
+      font-style: normal;
+      font-weight: normal;
+      width: 586px;
+      font-size: 48px;
+      line-height: 59px;
+      margin-bottom: 24px;
+    }
+
+    &--description {
+      width: 580px;
+      font-size: 20px;
+      line-height: 142%;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__button {
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 142%;
+    text-align: center;
+    color: #3A80BA;
+    border-radius: 8px;
+    padding: 17px 31px;
+  }
+
+  &__image {
+    position: absolute;
+    width: 321px;
+    height: 561px;
+    left: 910px;
+    top: 72px;
+  }
+}

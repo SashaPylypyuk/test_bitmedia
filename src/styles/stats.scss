@@ -1,0 +1,39 @@
+.Sheader {
+  background: #3A80BA;
+  margin-bottom: 16px;
+  padding: 10px 130px;
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+  }
+}
+
+.links {
+  margin-bottom: 24px;
+  &__item {
+
+  }
+}
+
+.text--bold {
+  margin-bottom: 16px;
+}
+
+.Sfooter {
+  padding: 15px 130px;
+  display: flex;
+  justify-content: space-between;
+  background: #1C3B55;
+  &__text--logo {
+
+  }
+  &__text--rights {
+
+  }
+  &__text--copyrights {
+
+  }
+}
