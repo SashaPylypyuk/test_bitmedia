@@ -18,12 +18,12 @@ const App = () => (
     <Provider store={store}>
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/test_bitmedia/">
             <Header />
             <About />
             <Footer />
           </Route>
-          <Route path="/stats">
+          <Route path="/test_bitmedia/stats">
             <Stats />
           </Route>
         </Switch>

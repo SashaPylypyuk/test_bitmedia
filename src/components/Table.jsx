@@ -30,35 +30,35 @@ const Table = (props) => {
     <>
       <Router>
         <Switch>
-          <Route exact path="/stats">
+          <Route exact path="/test_bitmedia/stats">
             <UserTable users={completedUsers} />
           </Route>
-          <Route path="/stats/:page">
+          <Route path="/test_bitmedia/stats/:page">
             <UserTable users={completedUsers} />
           </Route>
         </Switch>
         <div className="pages">
-          <Link className="pages__link" to="/stats/1">
+          <Link className="pages__link" to="/test_bitmedia/stats/1">
             1
           </Link>
-          <Link className="pages__link" to={`/stats/${Number.parseInt(currentPage, 10) - 2}`}>
+          <Link className="pages__link" to={`/test_bitmedia/stats/${Number.parseInt(currentPage, 10) - 2}`}>
             {Number.parseInt(currentPage, 10) - 2}
           </Link>
-          <Link className="pages__link" to={`/stats/${Number.parseInt(currentPage, 10) - 1}`}>
+          <Link className="pages__link" to={`/test_bitmedia/stats/${Number.parseInt(currentPage, 10) - 1}`}>
             {Number.parseInt(currentPage, 10) - 1}
           </Link>
-          <Link className="pages__link" to={`/stats/${currentPage}`}>
+          <Link className="pages__link" to={`/test_bitmedia/stats/${currentPage}`}>
             {currentPage}
           </Link>
           <Link className="pages__link"
-            to={`/stats/${Number.parseInt(currentPage, 10) + 1}`}
+            to={`/test_bitmedia/stats/${Number.parseInt(currentPage, 10) + 1}`}
           >
             {Number.parseInt(currentPage, 10) + 1}
           </Link>
-          <Link className="pages__link" to={`/stats/${Number.parseInt(currentPage, 10) + 2}`}>
+          <Link className="pages__link" to={`/test_bitmedia/stats/${Number.parseInt(currentPage, 10) + 2}`}>
             {Number.parseInt(currentPage, 10) + 2}
           </Link>
-          <Link className="pages__link" to={`/stats/${pagesCount}`}>
+          <Link className="pages__link" to={`/test_bitmedia/stats/${pagesCount}`}>
             {pagesCount}
           </Link>
         </div>
