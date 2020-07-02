@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -16,18 +15,16 @@ import { store } from './store';
 const App = () => (
   <>
     <Provider store={store}>
-      <Router>
-        <Switch>
-          <Route exact path="/test_bitmedia/">
-            <Header />
-            <About />
-            <Footer />
-          </Route>
-          <Route path="/test_bitmedia/stats">
-            <Stats />
-          </Route>
-        </Switch>
-      </Router>
+      <Switch>
+        <Route exact path="/">
+          <Header />
+          <About />
+          <Footer />
+        </Route>
+        <Route path="/stats">
+          <Stats />
+        </Route>
+      </Switch>
     </Provider>
 
   </>
