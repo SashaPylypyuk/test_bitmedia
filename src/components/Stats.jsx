@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Table from './Table';
 
 export const Stats = () => (
   <>
@@ -7,17 +9,20 @@ export const Stats = () => (
         AppCo
       </h1>
     </header>
-    <div className="links">
-      <p className="links__item">
-        Main page
-      </p>
-      <p className="links__item">
-        User satistics
-      </p>
+    <div className="wrapper">
+      <div className="links">
+        <Link className="links__item" to="/">
+          Main page
+        </Link>
+        <p className="links__item links__item--active">
+          User satistics
+        </p>
+      </div>
+      <h1 className="text--bold">
+        Users statissics
+      </h1>
+      <Table />
     </div>
-    <h1 className="text--bold">
-      Users statissics
-    </h1>
     <footer className="Sfooter">
       <h1 className="Sfooter__text--logo">
         AppCo

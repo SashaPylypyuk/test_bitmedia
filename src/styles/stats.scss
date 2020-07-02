@@ -11,10 +11,28 @@
   }
 }
 
-.links {
-  margin-bottom: 24px;
-  &__item {
+.wrapper {
+  padding: 0 130px;
+}
 
+.links {
+  width: 200px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ccc;
+    &--active {
+      color: #3A80BA;
+    }
+
+    &:hover {
+      color: #3A80BA;
+    }
   }
 }
 
@@ -23,6 +41,7 @@
 }
 
 .Sfooter {
+  color: #fff;
   padding: 15px 130px;
   display: flex;
   justify-content: space-between;
