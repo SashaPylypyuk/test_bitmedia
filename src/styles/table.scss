@@ -29,20 +29,34 @@
     text-align: center;
     padding: 6px;
   }
+
+  &__link {
+    color: #1A1A1A;
+    text-decoration: none;
+  }
 }
 
 .pages {
   margin: 0 auto;
-  width: 500px;
+  width: 400px;
   display: flex;
   margin-bottom: 24px;
+  justify-content: center;
 
   &__link {
+    width: 48px;
+    height: 48px;
+    text-align: center;
     border-radius: 8px;
-    color: #fff;
+    color: #1A1A1A;
     margin-right: 8px;
     text-decoration: none;
     padding: 14px;
-    background-color: #3A80BA;
+    background-color: #fff;
+
+    &--active {
+      color: #fff;
+      background-color: #3A80BA;
+    }
   }
 }

@@ -1,6 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {
+  Switch,
+  Route,
+  Link,
+} from 'react-router-dom';
 import Table from './Table';
+import { User } from './User';
 
 export const Stats = () => (
   <>
@@ -10,18 +15,15 @@ export const Stats = () => (
       </h1>
     </header>
     <div className="wrapper">
-      <div className="links">
-        <Link className="links__item" to="/">
-          Main page
-        </Link>
-        <p className="links__item links__item--active">
-          User satistics
-        </p>
-      </div>
-      <h1 className="text--bold">
-        Users statissics
-      </h1>
-      <Table />
+      <Switch>
+        <Route path="/stats/page/">
+          <Table />
+        </Route>
+        <Route path="/stats/user/:id">
+          <User />
+        </Route>
+      </Switch>
+
     </div>
     <footer className="Sfooter">
       <h1 className="Sfooter__text--logo">

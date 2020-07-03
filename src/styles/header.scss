@@ -44,7 +44,13 @@
     color: #3A80BA;
     border-radius: 8px;
     padding: 17px 31px;
+    transition: all linear 500ms;
+    &:hover {
+      animation: pulse 1s;
+      box-shadow: 0 0 0 2em rgba(#fff,0);
+    }
   }
+
 
   &__image {
     position: absolute;
@@ -53,4 +59,8 @@
     left: 910px;
     top: 72px;
   }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #fff; }
 }

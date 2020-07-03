@@ -65,5 +65,13 @@
     background: #3A80BA;
     border-radius: 8px;
 
+    &:hover {
+      animation: pulse 1s;
+      box-shadow: 0 0 0 2em rgba(#fff,0);
+    }
+
   }
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #3A80BA; }
 }

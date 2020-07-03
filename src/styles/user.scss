@@ -1,0 +1,39 @@
+.user {
+  &__canvas {
+    margin-bottom: 32px;
+  }
+  &__links {
+    display: flex;
+    margin-bottom: 24px;
+    &--item {
+      text-decoration: none;
+      color: #CCCCCC;
+      font-size: 16px;
+      line-height: 20px;
+      transition: all ease-in-out .5s;
+      margin-right: 20px;
+
+      &:hover {
+        color: #3A80BA;
+      }
+    }
+    &--name {
+      color: #3A80BA;
+    }
+  }
+  &__name {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #1A1A1A;
+    margin-bottom: 24px;
+  }
+
+  &__category {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1A1A1A;
+    margin-bottom: 24px;
+  }
+}

@@ -3,7 +3,6 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { Header } from './components/Header';
 import { About } from './components/About';

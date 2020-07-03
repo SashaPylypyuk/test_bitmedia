@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setPage } from '../store';
 
 const UserTable = (props) => {
   let { page } = useParams();
-  let { setPage, users, currentPage } = props;
+  let { setPage, users } = props;
 
   if (page === undefined || page <= 0) {
     page = 1;
@@ -54,30 +54,51 @@ const UserTable = (props) => {
         {users.map(user => (
           <tr className="table__tr--person">
             <td className="table__td">
-              {user.id}
+              <Link to={`/stats/user/${user.id}`} className="table__link">
+                {user.id}
+              </Link>
             </td>
             <td className="table__td">
-              {user.first_name}
+              <Link to={`/stats/user/${user.id}`} className="table__link">
+                {user.first_name}
+              </Link>
+
             </td>
             <td className="table__td">
-              {user.last_name}
+              <Link to={`/stats/user/${user.id}`} className="table__link">
+                {user.last_name}
+              </Link>
+
             </td>
             <td className="table__td">
-              {user.email}
+
+              <Link to={`/stats/user/${user.id}`} className="table__link">
+                {user.email}
+              </Link>
             </td>
             <td className="table__td">
-              {user.gender}
+
+              <Link to={`/stats/user/${user.id}`} className="table__link">
+                {user.gender}
+              </Link>
             </td>
             <td className="table__td">
-              {user.ip_address}
+              <Link to={`/stats/user/${user.id}`} className="table__link">
+                {user.ip_address}
+              </Link>
             </td>
             <td className="table__td">
-              {user.total_clicks}
+              <Link to={`/stats/user/${user.id}`} className="table__link">
+                {user.total_clicks}
+              </Link>
             </td>
             <td className="table__td">
-              {user.page__views}
+              <Link to={`/stats/user/${user.id}`} className="table__link">
+                {user.page__views}
+              </Link>
             </td>
           </tr>
+
         ))}
       </table>
     </>

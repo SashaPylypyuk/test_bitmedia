@@ -16,7 +16,7 @@ export const Header = () => (
       Our design projects are fresh and simple and will
       benefit your business greatly. Learn more about our work!
     </p>
-    <Link to="/stats" className="header__button">
+    <Link to="/stats/page/1" className="header__button">
       Views Stats
     </Link>
     <img src={imageMobile} alt="phone" className="header__image" />
